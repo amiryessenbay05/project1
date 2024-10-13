@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: gainsboro;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column; /* Изменено на столбик */
+    align-items: center; /* Центрирует содержимое по горизонтали */
+    border: 3px solid #240f77eb;
+    padding: 20px;
+    box-shadow: 0 15px 10px rebeccapurple;
+    
+}
+
+.image {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px; /* Добавлено для отступа между фото и текстом */
+}
+
+.photo {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about_me {
+    text-align: center; /* Выравнивание текста по центру */
+    max-width: 400px;
+    margin-bottom: 20px; /* Добавлено для отступа между текстом и списком */
+}
+
+.links ul {
+    list-style-type: none; /* Убирает маркеры списка */
+    padding: 0; /* Убирает внутренний отступ */
+}
+
+.links li {
+    margin: 50px 0; /* Отступы между элементами списка */
+}
+
+.links a {
+    text-decoration: none; /* Убирает подчеркивание ссылок */
+    color: #240f77eb; /* Цвет ссылок */
+    font-size: 18px; /* Размер шрифта для ссылок */
+}
+
+.links a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+.buttons{
+    border: 3px solid gray;
+    border-top:30px ;
+    transform-origin:left;
+    transition: transform 0.4s ease;
+
+}
+.buttons:hover{
+    transform: scale(1.2);
+}
+.social_buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    height:34px;
+    width:34px;
+    border-radius:50%;
+    margin:0 8px;
+    background-color: #4070f4;
+    text-decoration: none;
+    font-size: 18px;
+
+}
